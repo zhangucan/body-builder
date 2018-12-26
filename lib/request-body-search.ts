@@ -25,6 +25,6 @@ export class RequestBodySearch {
   build() {
     const body = _.cloneDeep(this._body);
     const queries = _.cloneDeep(this._queries);
-    return Object.assign(body, { queries });
+    return _.assign(body, { queries })
   }
 }
